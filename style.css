@@ -50,7 +50,7 @@ ul {
 .dropdown-content {
   position: absolute;
   display: none;
-  background-color: grey;
+  background-color: lightpink;
   min-width: 144px;
   overflow: auto;
   border: 1px solid black;
@@ -103,7 +103,7 @@ ul {
 .dropdown-content2 {
   position: absolute;
   display: none;
-  background-color: grey;
+  background-color: lightpink;
   min-width: 151px;
   overflow: auto;
   border: 1px solid black;
@@ -156,7 +156,7 @@ ul {
 .dropdown-content3 {
   position: absolute;
   display: none;
-  background-color: grey;
+  background-color: lightpink;
   min-width: 102px;
   overflow: auto;
   border: 1px solid black;
@@ -209,7 +209,7 @@ ul {
 .dropdown-content4 {
   position: absolute;
   display: none;
-  background-color: grey;
+  background-color: lightpink;
   min-width: 163px;
   overflow: auto;
   border: 1px solid black;

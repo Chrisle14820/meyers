@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>MAKEUP STORE</h1>
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">&#11015; Price Range &#11015;</button>
+        <div id="myDropdown" class="dropdown-content">
+            <ul>
+                <li>
+                    <button onclick="ten()" id="ten">$5 - $10</button>
+                </li>
+                <li>
+                    <button onclick="fifteen()" id="fifteen">$10 - $15</button>
+                </li>
+                <li>
+                    <button onclick="twenty()" id="twenty">$15 - $20</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="dropdown2">
+        <button onclick="myFunction2()" class="dropbtn2">&#11015; Product Type &#11015;</button>
+        <div id="myDropdown2" class="dropdown-content2">
+            <ul>
+                <li>
+                    <button onclick="ten()" id="ten">Bronzer</button>
+                </li>
+                <li>
+                    <button onclick="fifteen()" id="fifteen">Blush</button>
+                </li>
+                <li>
+                    <button onclick="twenty()" id="twenty">Lip Liner</button>
+                </li>
+                <li>
+                    <button onclick="twenty()" id="twenty">Foundation</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="dropdown3">
+        <button onclick="myFunction3()" class="dropbtn3">&#11015; Rating &#11015;</button>
+        <div id="myDropdown3" class="dropdown-content3">
+            <ul>
+                <li>
+                    <button onclick="ten()" id="ten">0 - 1</button>
+                </li>
+                <li>
+                    <button onclick="fifteen()" id="fifteen">1 - 2</button>
+                </li>
+                <li>
+                    <button onclick="twenty()" id="twenty">2 - 3</button>
+                </li>
+                <li>
+                    <button onclick="twenty()" id="twenty">3 - 4</button>
+                </li>
+                <li>
+                    <button onclick="twenty()" id="twenty">4 - 5</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="dropdown4">
+        <button onclick="myFunction4()" class="dropbtn4">&#11015; Product Colors &#11015;</button>
+        <div id="myDropdown4" class="dropdown-content4">
+            <ul>
+                <li>
+                    <button onclick="ten()" id="ten">Coral</button>
+                </li>
+                <li>
+                    <button onclick="fifteen()" id="fifteen">Rose</button>
+                </li>
+                <li>
+                    <button onclick="twenty()" id="twenty">Nude</button>
+                </li>
+                <li>
+                    <button onclick="twenty()" id="twenty">Bronze</button>
+                </li>
+                <li>
+                    <button onclick="twenty()" id="twenty">Pink</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="grid" id="grid">
+        <!-- FIRST PRODUCT -->
+        <div class="container" id="container">
+            <div id="booster-img"></div>
+            <div id="booster-name"></div>
+            <div id="booster-rating"></div>
+            <div id="booster-price"></div>
+            <button onclick="viewMore()" id="myBtn">View More</button>
+        </div>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="booster-img-modal"></div>
+                <div id="booster-name-modal"></div>
+                <div id="booster-desc"></div>
+                <div id="booster-rating-modal"></div>
+                <div id="booster-price-modal"></div>
+                <div id="booster-colors-modal"></div>
+                <button class="prodBtn"
+                    onclick="window.open('https://well.ca/products/maybelline-face-studio-master_88837.html')">Product
+                    Link</button>
+            </div>
+        </div>
+        <!-- SECOND PRODUCT -->
+        <div class="container2">
+            <div id="bronzer-img"></div>
+            <div id="bronzer-name"></div>
+            <div id="bronzer-rating"></div>
+            <div id="bronzer-price"></div>
+            <button onclick="viewMore2()" id="myBtn2">View More</button>
+        </div>
+        <div id="myModal2" class="modal2">
+            <div class="modal-content2">
+                <span class="close2">&times;</span>
+                <div id="bronzer-img-modal"></div>
+                <div id="bronzer-name-modal"></div>
+                <div id="bronzer-desc"></div>
+                <div id="bronzer-rating-modal"></div>
+                <div id="bronzer-price-modal"></div>
+                <div id="bronzer-colors-modal"></div>
+                <button class="prodBtn2"
+                    onclick="window.open('https://well.ca/products/maybelline-fit-me-bronzer_31265.html')">Product
+                    Link</button>
+            </div>
+        </div>
+        <!-- THIRD PRODUCT -->
+        <div class="container3">
+            <div id="contour-img"></div>
+            <div id="contour-name"></div>
+            <div id="contour-rating"></div>
+            <div id="contour-price"></div>
+            <button onclick="viewMore3()" id="myBtn3">View More</button>
+        </div>
+        <div id="myModal3" class="modal3">
+            <div class="modal-content3">
+                <span class="close3">&times;</span>
+                <div id="contour-img-modal"></div>
+                <div id="contour-name-modal"></div>
+                <div id="contour-desc"></div>
+                <div id="contour-rating-modal"></div>
+                <div id="contour-price-modal"></div>
+                <div id="contour-colors-modal"></div>
+                <button class="prodBtn3"
+                    onclick="window.open('https://well.ca/products/maybelline-fit-me-bronzer_31265.html')">Product
+                    Link</button>
+            </div>
+        </div>
+        <!-- FOURTH PRODUCT -->
+        <div class="container4">
+            <div id="boostBlush-img"></div>
+            <div id="boostBlush-name"></div>
+            <div id="boostBlush-rating"></div>
+            <div id="boostBlush-price"></div>
+            <button onclick="viewMore4()" id="myBtn4">View More</button>
+        </div>
+        <div id="myModal4" class="modal4">
+            <div class="modal-content4">
+                <span class="close4">&times;</span>
+                <div id="boostBlush-img-modal"></div>
+                <div id="boostBlush-name-modal"></div>
+                <div id="boostBlush-desc"></div>
+                <div id="boostBlush-rating-modal"></div>
+                <div id="boostBlush-price-modal"></div>
+                <div id="boostBlush-colors-modal"></div>
+                <button class="prodBtn4"
+                    onclick="window.open('https://well.ca/products/maybelline-face-studio-master_88831.html')">Product
+                    Link</button>
+            </div>
+        </div>
+    </div>
+    <div class="grid" id="grid">
+        <!-- FIFTH PRODUCT -->
+        <div class="container5">
+            <div id="blush-img"></div>
+            <div id="blush-name"></div>
+            <div id="blush-rating"></div>
+            <div id="blush-price"></div>
+            <button onclick="viewMore5()" id="myBtn5">View More</button>
+        </div>
+        <div id="myModal5" class="modal5">
+            <div class="modal-content5">
+                <span class="close5">&times;</span>
+                <div id="blush-img-modal"></div>
+                <div id="blush-name-modal"></div>
+                <div id="blush-desc"></div>
+                <div id="blush-rating-modal"></div>
+                <div id="blush-price-modal"></div>
+                <div id="blush-colors-modal"></div>
+                <button class="prodBtn5"
+                    onclick="window.open('https://well.ca/products/maybelline-face-studio-master_88837.html')">Product
+                    Link</button>
+
+            </div>
+        </div>
+        <!-- SIXTH PRODUCT -->
+        <div class="container6">
+            <div id="bouncy-img"></div>
+            <div id="bouncy-name"></div>
+            <div id="bouncy-rating"></div>
+            <div id="bouncy-price"></div>
+            <button onclick="viewMore6()" id="myBtn6">View More</button>
+        </div>
+        <div id="myModal6" class="modal6">
+            <div class="modal-content6">
+                <span class="close6">&times;</span>
+                <div id="bouncy-img-modal"></div>
+                <div id="bouncy-name-modal"></div>
+                <div id="bouncy-desc"></div>
+                <div id="bouncy-rating-modal"></div>
+                <div id="bouncy-price-modal"></div>
+                <div id="bouncy-colors-modal"></div>
+                <button class="prodBtn6"
+                    onclick="window.open('https://well.ca/products/maybelline-dream-bouncy-blush_50689.html')">Product
+                    Link</button>
+            </div>
+        </div>
+        <!-- SEVENTH PRODUCT -->
+        <div class="container7">
+            <div id="lipLiner-img"></div>
+            <div id="lipLiner-name"></div>
+            <div id="lipLiner-rating"></div>
+            <div id="lipLiner-price"></div>
+            <button onclick="viewMore7()" id="myBtn7">View More</button>
+        </div>
+        <div id="myModal7" class="modal7">
+            <div class="modal-content7">
+                <span class="close7">&times;</span>
+                <div id="lipLiner-img-modal"></div>
+                <div id="lipLiner-name-modal"></div>
+                <div id="lipLiner-desc"></div>
+                <div id="lipLiner-rating-modal"></div>
+                <div id="lipLiner-price-modal"></div>
+                <div id="lipLiner-colors-modal"></div>
+                <button class="prodBtn7"
+                    onclick="window.open('https://well.ca/products/maybelline-color-sensational_14541.html')">Product
+                    Link</button>
+            </div>
+        </div>
+        <!-- EIGHTH PRODUCT -->
+        <div class="container8">
+            <div id="mooseFound-img"></div>
+            <div id="mooseFound-name"></div>
+            <div id="mooseFound-rating"></div>
+            <div id="mooseFound-price"></div>
+            <button onclick="viewMore8()" id="myBtn8">View More</button>
+        </div>
+        <div id="myModal8" class="modal8">
+            <div class="modal-content8">
+                <span class="close8">&times;</span>
+                <div id="mooseFound-img-modal"></div>
+                <div id="mooseFound-name-modal"></div>
+                <div id="mooseFound-desc"></div>
+                <div id="mooseFound-rating-modal"></div>
+                <div id="mooseFound-price-modal"></div>
+                <div id="mooseFound-colors-modal"></div>
+                <button class="prodBtn8"
+                    onclick="window.open('https://well.ca/products/maybelline-dream-smooth-mousse_28944.html')">Product
+                    Link</button>
+            </div>
+        </div>
+    </div>
+    <div class="grid" id="grid">
+        <!-- NINTH PRODUCT -->
+        <div class="container9">
+            <div id="foundStick-img"></div>
+            <div id="foundStick-name"></div>
+            <div id="foundStick-rating"></div>
+            <div id="foundStick-price"></div>
+            <button onclick="viewMore9()" id="myBtn9">View More</button>
+        </div>
+        <div id="myModal9" class="modal9">
+            <div class="modal-content9">
+                <span class="close9">&times;</span>
+                <div id="foundStick-img-modal"></div>
+                <div id="foundStick-name-modal"></div>
+                <div id="foundStick-desc"></div>
+                <div id="foundStick-rating-modal"></div>
+                <div id="foundStick-price-modal"></div>
+                <div id="foundStick-colors-modal"></div>
+                <button class="prodBtn9"
+                    onclick="window.open('https://well.ca/products/maybelline-fit-me-shine-free_79864.html')">Product
+                    Link</button>
+
+            </div>
+        </div>
+        <!-- TENTH PRODUCT -->
+        <div class="container10">
+            <div id="matteFound-img"></div>
+            <div id="matteFound-name"></div>
+            <div id="matteFound-rating"></div>
+            <div id="matteFound-price"></div>
+            <button onclick="viewMore10()" id="myBtn10">View More</button>
+        </div>
+        <div id="myModal10" class="modal10">
+            <div class="modal-content10">
+                <span class="close10">&times;</span>
+                <div id="matteFound-img-modal"></div>
+                <div id="matteFound-name-modal"></div>
+                <div id="matteFound-desc"></div>
+                <div id="matteFound-rating-modal"></div>
+                <div id="matteFound-price-modal"></div>
+                <div id="matteFound-colors-modal"></div>
+                <button class="prodBtn10"
+                    onclick="window.open('https://well.ca/products/maybelline-dream-matte-mousse_3747.html')">Product
+                    Link</button>
+            </div>
+        </div>
+        <!-- ELEVENTH PRODUCT -->
+        <div class="container11">
+            <div id="powderFound-img"></div>
+            <div id="powderFound-name"></div>
+            <div id="powderFound-rating"></div>
+            <div id="powderFound-price"></div>
+            <button onclick="viewMore11()" id="myBtn11">View More</button>
+        </div>
+        <div id="myModal11" class="modal11">
+            <div class="modal-content11">
+                <span class="close11">&times;</span>
+                <div id="powderFound-img-modal"></div>
+                <div id="powderFound-name-modal"></div>
+                <div id="powderFound-desc"></div>
+                <div id="powderFound-rating-modal"></div>
+                <div id="powderFound-price-modal"></div>
+                <div id="powderFound-colors-modal"></div>
+                <button class="prodBtn11"
+                    onclick="window.open('https://well.ca/products/maybelline-mineral-power-natural_5900.html?cat=582')">Product
+                    Link</button>
+            </div>
+        </div>
+        <!-- TWELFTH PRODUCT -->
+        <div class="container12">
+            <div id="velvetFound-img"></div>
+            <div id="velvetFound-name"></div>
+            <div id="velvetFound-rating"></div>
+            <div id="velvetFound-price"></div>
+            <button onclick="viewMore12()" id="myBtn12">View More</button>
+        </div>
+        <div id="myModal12" class="modal12">
+            <div class="modal-content12">
+                <span class="close12">&times;</span>
+                <div id="velvetFound-img-modal"></div>
+                <div id="velvetFound-name-modal"></div>
+                <div id="velvetFound-desc"></div>
+                <div id="velvetFound-rating-modal"></div>
+                <div id="velvetFound-price-modal"></div>
+                <div id="velvetFound-colors-modal"></div>
+                <button class="prodBtn12"
+                    onclick="window.open('https://well.ca/products/maybelline-dream-velvet-foundation_112738.html?cat=581')">Product
+                    Link</button>
+            </div>
+        </div>
+    </div>
+    <div class="pagination">
+        <a href="#">&laquo;</a>
+        <a class="active" href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">&raquo;</a>
+      </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
